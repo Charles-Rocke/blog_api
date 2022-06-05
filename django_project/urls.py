@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # best practice to "version" APIs
     path("api/v1/", include("posts.urls")),
+    path("api-auth/", include("rest_framework.urls")), # new
 ]
